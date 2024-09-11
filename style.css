@@ -1,47 +1,114 @@
-/* Estilo geral da página */
+/* Estilos gerais do corpo */
 body {
     margin: 0;
     padding: 0;
-    background-color: #1b2838; /* Fundo escuro estilo Steam */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Centraliza verticalmente */
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
-/* Container central */
-.container {
-    display: flex;
-    align-items: center;
-    width: 600px;
-    height: 200px; /* Altura menor para caber nome e foto */
-    background-color: #171a21; /* Fundo do container */
-    border-radius: 10px;
+/* Background do cabeçalho */
+.profile_header_bg {
+    background-color: #1b2838;
     padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para efeito visual */
+    width: 960px;
+    margin: 0 auto;
+    min-height: 100vh;
 }
 
-/* Retângulo da foto */
-.profile-picture {
-    width: 120px;
-    height: 120px;
-    background-color: #2a475e; /* Cor do retângulo estilo Steam */
-    border-radius: 10px; /* Leve arredondamento */
-    margin-right: 20px; /* Espaço entre a foto e o texto */
+.profile_header_bg_texture {
+    background-color: #171a21;
+    padding: 15px;
 }
 
-/* Seção de texto à direita da foto */
-.text-section {
-    color: #c7d5e0;
+/* Estilo do cabeçalho de perfil */
+.profile_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
 }
 
-.text-section h1 {
-    color: #ffffff; /* Azul estilo Steam */
-    font-size: 2rem;
-    margin: 0;
+/* Estilo do conteúdo centralizado */
+.profile_header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.text-section p {
-    margin: 5px 0;
-    font-size: 1rem;
+/* Nome de usuário */
+.persona_name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c6d4df;
 }
+
+/* Nome real */
+.header_real_name {
+    font-size: 16px;
+    color: #8f98a0;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.header_real_name img.profile_flag {
+    margin-left: 10px;
+}
+
+/* Nível do usuário */
+.persona_level {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.friendPlayerLevel {
+    display: inline-block;
+    padding: 2px 6px;
+    background-color: #66c0f4;
+    border-radius: 4px;
+}
+
+.friendPlayerLevelNum {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Removi o botão Editar perfil */
+
+/* Resumo do perfil */
+.profile_header_summary {
+    margin-top: 10px;
+    color: #c6d4df;
+    font-size: 14px;
+}
+
+/* Espaçamento de nome e resumo */
+.persona_name_spacer,
+.header_real_name_spacer {
+    margin-bottom: 10px;
+}
+
+.profile_summary {
+    font-size: 16px;
+    color: #8f98a0;
+}
+
+.profile_summary_footer {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #66c0f4;
+}
+
+/* Links no rodapé do resumo */
+.whiteLink {
+    color: #66c0f4;
+    text-decoration: none;
+}
+
+.whiteLink:hover {
+    text-decoration: underline;
+}
+
+/* Removi o texto "Muito derrotado" */
