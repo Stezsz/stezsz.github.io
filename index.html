@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Perfil Steam Estilo</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="central-bar"></div>
-    <div class="profile_header_bg">
-
-        <div class="profile_header_bg_texture">
-            
-            <div class="profile_header">
-    
-                
-                <div class="profile_header_content">
-    
-                    <div class="profile_header_centered_persona">
-                        <div class="persona_name" style="font-size: 24px;">
-                            <span class="actual_persona_name">Stephan</span>
-                        </div>
-    
-                        <div class="header_real_name ellipsis">
-                            <bdi>Stephan Rodrigues Lassaponari</bdi>
-                            &nbsp;
-                            <img class="profile_flag" src="https://community.akamai.steamstatic.com/public/images/countryflags/pt.gif">
-                            Portugal
-                        </div>
-                    </div>
-    
-                    <div class="profile_header_badgeinfo">
-                        <div class="profile_header_badgeinfo_badge_area">
-                            <div class="persona_level">Nível 
-                                <div class="friendPlayerLevel lvl_10">
-                                    <span class="friendPlayerLevelNum">19</span>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Cabeçalho do Perfil -->
+    <header class="profile-header">
+        <div class="profile-header-content">
+            <div class="profile-info">
+                <div class="avatar">
+                    <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar-img">
+                </div>
+                <div class="profile-details">
+                    <div class="profile-name">Stephan</div>
+                    <div class="real-name">
+                        <bdi>Stephan Rodrigues Lassaponari</bdi>
+                        <img class="profile-flag" src="https://community.akamai.steamstatic.com/public/images/countryflags/pt.gif" alt="Portugal">
+                        Portugal
                     </div>
                 </div>
             </div>
+            <div class="profile-level">
+                <span class="level-text">Nível</span>
+                <div class="level-badge">19</div>
+            </div>
         </div>
+    </header>
+
+    <!-- Seções de conteúdo -->
+    <div class="profile-sections">
+        <section id="projects">
+            <h2>Meus Projetos</h2>
+            <p>Descrição dos projetos...</p>
+        </section>
+
+        <section id="experiences">
+            <h2>Minhas Experiências</h2>
+            <p>Descrição das experiências...</p>
+        </section>
     </div>
 </body>
 </html>

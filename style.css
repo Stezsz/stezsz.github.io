@@ -1,114 +1,155 @@
-/* Estilos gerais do corpo */
-body {
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-/* Background do cabeçalho */
-.profile_header_bg {
+body {
     background-color: #1b2838;
+    font-family: 'Roboto', sans-serif;
+    color: #c6d4df;
+    line-height: 1.6;
     padding: 20px;
-    width: 960px;
+}
+
+/* Estilos do cabeçalho */
+.profile-header {
+    background: linear-gradient(135deg, #1b2838, #171a21);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
-    min-height: 100vh;
 }
 
-.profile_header_bg_texture {
-    background-color: #171a21;
-    padding: 15px;
-}
-
-/* Estilo do cabeçalho de perfil */
-.profile_header {
+.profile-header-content {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    color: white;
-}
-
-/* Estilo do conteúdo centralizado */
-.profile_header_content {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
 }
 
-/* Nome de usuário */
-.persona_name {
-    font-size: 24px;
-    font-weight: bold;
-    color: #c6d4df;
-}
-
-/* Nome real */
-.header_real_name {
-    font-size: 16px;
-    color: #8f98a0;
-    margin-top: 5px;
+.profile-info {
     display: flex;
     align-items: center;
 }
 
-.header_real_name img.profile_flag {
+.avatar {
+    margin-right: 20px;
+}
+
+.avatar-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #66c0f4;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.real-name {
+    font-size: 18px;
+    color: #8f98a0;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.real-name img {
     margin-left: 10px;
 }
 
-/* Nível do usuário */
-.persona_level {
+/* Estilo do nível */
+.profile-level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.level-text {
     font-size: 18px;
-    margin-right: 10px;
-}
-
-.friendPlayerLevel {
-    display: inline-block;
-    padding: 2px 6px;
-    background-color: #66c0f4;
-    border-radius: 4px;
-}
-
-.friendPlayerLevelNum {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Removi o botão Editar perfil */
-
-/* Resumo do perfil */
-.profile_header_summary {
-    margin-top: 10px;
     color: #c6d4df;
-    font-size: 14px;
 }
 
-/* Espaçamento de nome e resumo */
-.persona_name_spacer,
-.header_real_name_spacer {
-    margin-bottom: 10px;
+.level-badge {
+    background-color: #66c0f4;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.profile_summary {
+/* Seções do perfil */
+.profile-sections {
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: #1b2838;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    font-size: 28px;
+    color: #66c0f4;
+    margin-bottom: 15px;
+}
+
+section p {
     font-size: 16px;
-    color: #8f98a0;
+    color: #c6d4df;
 }
 
-.profile_summary_footer {
-    margin-top: 10px;
-    font-size: 12px;
-    color: #66c0f4;
-}
-
-/* Links no rodapé do resumo */
-.whiteLink {
-    color: #66c0f4;
+/* Links */
+a {
     text-decoration: none;
+    color: #66c0f4;
+    transition: color 0.3s ease;
 }
 
-.whiteLink:hover {
-    text-decoration: underline;
+a:hover {
+    color: #ffffff;
 }
 
-/* Removi o texto "Muito derrotado" */
+/* Responsividade */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        margin: 0 0 20px 0;
+    }
+
+    .profile-info {
+        flex-direction: column;
+    }
+
+    .profile-level {
+        margin-top: 20px;
+    }
+}
